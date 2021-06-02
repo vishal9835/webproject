@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+
+	<title>online course reservation system</title>
+              <!-- font awesome cdnjs link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     
+
+	<style>
+
+        html{
+            font-size: 62.5%;
+
+        /*  suppose that 
+            1rem=10px
+            which means 22px = 22px/10 =>2.2rem*/
+        }
+        .main{
+            font-size: 6rem;
+        }
+        .head{
+            font-size: 2rem;
+        }
+        @media(max-width: 998px){
+        html{
+            font-size:55%;
+        }
+    }
+    @media(max-width: 768px){
+        html{
+            font-size: 45%;
+        }
+    }
+		
+		h1{
+              
+             color: white;
+			left: 40rem;
+			top: 5rem;
+			position: absolute;
+		
+		}
+
+		header{
+			height: 18rem;
+			width: 180rem;
+			background-color: #C36464 ;      /*( (#C36464) brown or chocolate color)*/
+		}
+
+
+
+		/*footer{
+			top:10px;
+			color: white;
+			height: 50px;
+			width: 100%;
+			background-color:  #F0677C;
+		}*/
+
+footer {
+
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 180rem;
+    background-color: #F0677C ;     /*(#F0677C pink color)*/    
+}
+
+    footer a, footer a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.marque{
+    width: 180rem;
+    
+}
+
+	/*	nav ul{
+			height: 50px;
+			width: 100%;
+			color: white;
+          background-color: black 
+          text-transform:uppercase;    
+		}
+
+		nav ul li{
+			display:inline-block;
+			margin: 5px;
+		}*/
+
+/*		body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}*/
+
+
+	/*	.set-radius-zero {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.content-wrapper {
+    margin-top: 40px;
+    min-height: 600px;
+    padding-bottom: 60px;
+}
+
+.page-head-line {
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #F0677C;
+    text-transform: uppercase;
+    color: #F0677C;
+    font-size: 20px;
+    margin-bottom: 40px;
+}*/
+
+/*.btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}*/
+.login-icon {
+    height: 6rem;
+width: 6rem;
+padding: 1.3rem;
+border-radius: 50%;
+font-size: 3rem;
+margin-bottom: 2rem;
+color: #fff;
+text-align: center;
+cursor:pointer;
+background-color:#F0677C;
+-webkit-border-radius:50%;
+    -moz-border-radius:50%;
+}
+
+
+		.left-div {
+    left: 105rem;
+    top: 6rem;
+    position: absolute;
+
+}
+img{
+            
+            top:5rem;
+            left: 105rem;
+            border-radius: 50%;
+            position: absolute;
+
+        }
+
+    .navbar-brand {
+    width: 25rem;
+    padding-top: 3rem;
+}
+/*
+ USER SETTINGS DIV */
+.user-settings-wrapper .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 1.5rem 1.8rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    background-color: #F0677C;
+    color: #fff;
+}
+
+/*.user-settings-wrapper {
+    margin-top: 10px;
+}*/
+
+    /*.user-settings-wrapper li {
+        display: inline-block;
+    }*/
+
+    /*.user-settings-wrapper .dropdown-settings {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .user-settings-wrapper .nav > li > a:hover,.user-settings-wrapper .nav > li > a:focus {
+        text-decoration: none;
+        background-color: #C36464!important;
+    }
+
+     .user-settings-wrapper img {
+        height: 64px;
+        width: 64px;
+        border: 1px solid #000000;
+    }
+===================================================
+    .user-settings-wrapper .dropdown-menu {
+        margin: 0px;
+        border-radius: 0px!important;
+        -moz-border-radius: 0px!important;
+        -webkit-border-radius: 0px!important;
+    }
+
+    .user-settings-wrapper .btn {
+        border-radius: 0px!important;
+        -moz-border-radius: 0px!important;
+        -webkit-border-radius: 0px!important;
+    }
+
+-----------------------------------------------------------
+    .user-settings-wrapper .media-heading {
+        padding-top: 10px;
+
+    }*/
+
+.menu-section {
+     width: 180rem;
+    background-color: #3D3D3D;
+}
+
+#menu-top a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 1rem 1rem 1rem 1rem;
+    text-transform: uppercase;
+}
+/*.menu-top-active {
+    background-color: #C36464;
+}*/
+.menu-section .nav > li > a:hover,.menu-section .nav > li > a:focus {
+    background-color: #F0677C!important;
+}
+
+/*.menu-section .dropdown-menu > li > a:hover,.menu-section .dropdown-menu > li > a:focus {
+    background-color: #F0677C!important;
+}*/
+
+
+
+
+</style>
+</head>
+<body>
+
+	<header><h1><b>STUDENT COMPUTER INSTITUTE</b></h1></header> 
+     <div class="left-div"> 
+		  <i class="fa fa-user-plus login-icon"></i>
+        </div>
+
+
+<section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-14">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+
+		<li><a href="home.html">HOME</a></li>
+		<li><a href="about.html">About us</a></li>
+		<li><a href="course.html">courses</a></li>
+		<li><a href="contact.html">contact us </a></li>
+		<li><a href="login2.php">Admin login</a></li>
+        <li><a href="login2.php">Student login</a></li>
+		<li><a href="certificate.html">Certificate</a></li>
+	
+	      </ul>
+        </div>
+     </div>
+        
+     </div>
+    </div>
+   </section>
+
+   <h3>NOTICE BOARD</h3>
+
+<marquee scrolldelay="255" bgcolor="lightblue" width="13%" height="250px" direction="up">
+<ol type="1">
+<li>Last date for registration in ADCA course is 30-08-2022.</li>
+<br>
+<li>Start registration for web development course from 05-07-2022 .</li>
+</marquee>
+
+<div class="q3"><img src="videotogif_2020.06.24_15.24.30.gif" height="300" width="600" alt="gif"></div>
+<br><br><br><br><br><br>
+
+<div class="q6"><img src="principal1.png" height="200" width="200"></div>
+
+<div class="start">
+<h2><font color="red"p align="center">FROM PRINCIPAL'S DESK</font></h2>
+<b>State Board of Technical Education, Jharkhand is a Board of Government of Jharkhand.Faculty development, student's development, curriculum development,Industry-Institute-Interaction,Academic Monitoring,Preparation of Perspective Plan, Preparation of Vision for SBTE etc.are the parameters to enhance the quality of Technical Education in Jharkhand.Over the years,SBTE has extended its role in all these direction, but in future I Would like to strengthen its working by making it outcome based Wherein the deliverable are identified.</div>
+<br><br><br><br>
+
+<div class="q5"><h3><p align="center">STUDENT'S CORNER</font></h3>
+<table border="1" align="center" bgcolor="pink" cellpadding="6" cellspacing="8">
+<tr>
+
+<td><b><a href="formfillup.html">Click To  Fillup Exam Form</a></td>
+</tr>
+</table><br>
+<table border="1" align="center" bgcolor="pink" cellpadding="6" cellspacing="6">
+<tr>
+<td><b><a href="print.html">Click to get form fill-up print</a></td>
+</tr>
+</table>
+<br>
+<table border="1" align="center" bgcolor="pink" cellpadding="6" cellspacing="6">
+<tr><td><b><a href="admitcard.html">click to get admit card</a></td>
+</tr>
+</table>
+</div>
+<br>
+
+
+<font color="yellow"><h3>GOOGLE MAPS</h3></font>
+<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3653.716050653246!2d86.02586741498011!3d23.686110384621195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1545176633101" width="600" height="450" frameborder="0" style="border:0" allowfullscreen </iframe>
+</iframe>
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<marquee class="marque" bgcolor="yellow" scrollamount="3">WELCOME  TO  THE  STUDENT  COMPUTER INSTITUTE , B.S.CITY.</marquee>
+<footer><center>@2021 online course Registration : By vishal kumar</center></footer>
+
+
+</body>
+</html>

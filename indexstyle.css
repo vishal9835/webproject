@@ -1,0 +1,71 @@
+ 
+
+
+.image1
+{
+padding-left: 10rem;
+top:0.5rem;
+z-index:1
+}
+.q2
+{
+position:absolute;
+left:70rem;
+top:8rem;
+z-index:1
+}
+.q3
+{
+position:absolute;
+left:-50rem;
+top: 25rem;
+z-index:1
+}
+.image2
+{
+position:absolute;
+left:154rem;
+top:0.5rem;
+z-index:1
+}
+.q5
+{
+position:absolute;
+left:130rem;
+top:60rem;
+z-index:1
+}
+.q6
+{
+position:absolute;
+left:-30rem;
+top:70rem;
+z-index:1
+}
+.start
+{
+position:absolute;
+top:95rem;
+left:65rem;
+width:40rem;
+height:35rem;
+text-align:center;
+background-color:white;
+opacity:0.7;
+}
+.n
+{
+	top: 10rem;
+}
+
+
+.button
+{
+	width:14rem;
+	border:0rem;
+	padding:1.2rem 1rem;
+	outline: none;
+	color:#fff;
+	background: linear-gradient(to right,#fb5283,#ff3527);
+}
+
